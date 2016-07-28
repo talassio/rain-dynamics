@@ -1,0 +1,65 @@
+\documentclass[]{article} %draft
+%\documentclass[a4paper,10pt]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[hmargin=1cm, vmargin=1cm]{geometry}
+\usepackage{graphicx,url}
+\usepackage{cmbright}
+\usepackage[T1]{fontenc}
+\pagestyle{empty}
+\begin{document}%\null\pagebreak
+\noindent\centering
+\begin{tabular}{p{0.21\linewidth}p{0.21\linewidth}p{0.21\linewidth}p{0.21\linewidth}}
+% mean
+\includegraphics[width=\linewidth, page=1]{rainfall1995-2005.pdf} & \includegraphics[width=\linewidth, page=2]{rainfall1995-2005.pdf} & \includegraphics[width=\linewidth, page=3]{rainfall1995-2005.pdf} & \includegraphics[width=\linewidth, page=4]{rainfall1995-2005.pdf}\\
+% sd
+\includegraphics[width=\linewidth, page=13]{rainfall1995-2005.pdf} & \includegraphics[width=\linewidth, page=14]{rainfall1995-2005.pdf} & \includegraphics[width=\linewidth, page=15]{rainfall1995-2005.pdf} & \includegraphics[width=\linewidth, page=16]{rainfall1995-2005.pdf}\\
+% rel
+\includegraphics[width=\linewidth, page=25]{rainfall1995-2005.pdf} & \includegraphics[width=\linewidth, page=26]{rainfall1995-2005.pdf} & \includegraphics[width=\linewidth, page=27]{rainfall1995-2005.pdf} & \includegraphics[width=\linewidth, page=28]{rainfall1995-2005.pdf}\\
+%
+%
+% mean
+\includegraphics[width=\linewidth, page=9]{rainfall1995-2005.pdf} & \includegraphics[width=\linewidth, page=10]{rainfall1995-2005.pdf} & \includegraphics[width=\linewidth, page=11]{rainfall1995-2005.pdf} & \includegraphics[width=\linewidth, page=12]{rainfall1995-2005.pdf} \\
+% sd
+\includegraphics[width=\linewidth, page=21]{rainfall1995-2005.pdf} & \includegraphics[width=\linewidth, page=22]{rainfall1995-2005.pdf} & \includegraphics[width=\linewidth, page=23]{rainfall1995-2005.pdf}     & \includegraphics[width=\linewidth, page=24]{rainfall1995-2005.pdf} \\
+% rel
+\includegraphics[width=\linewidth, page=33]{rainfall1995-2005.pdf} & \includegraphics[width=\linewidth, page=34]{rainfall1995-2005.pdf} & \includegraphics[width=\linewidth, page=35]{rainfall1995-2005.pdf}     & \includegraphics[width=\linewidth, page=36]{rainfall1995-2005.pdf} \\
+\end{tabular}
+\clearpage
+\noindent
+\begin{tabular}{p{0.21\linewidth}p{0.21\linewidth}p{0.21\linewidth}p{0.21\linewidth}}
+% mean
+% mean
+\includegraphics[width=\linewidth, page=5]{rainfall1995-2005.pdf} & \includegraphics[width=\linewidth, page=6]{rainfall1995-2005.pdf} & \includegraphics[width=\linewidth, page=7]{rainfall1995-2005.pdf} & \includegraphics[width=\linewidth, page=8]{rainfall1995-2005.pdf} \\
+% sd
+\includegraphics[width=\linewidth, page=17]{rainfall1995-2005.pdf} & \includegraphics[width=\linewidth, page=18]{rainfall1995-2005.pdf} & \includegraphics[width=\linewidth, page=19]{rainfall1995-2005.pdf}     & \includegraphics[width=\linewidth, page=20]{rainfall1995-2005.pdf} \\
+% rel
+\includegraphics[width=\linewidth, page=29]{rainfall1995-2005.pdf} & \includegraphics[width=\linewidth, page=30]{rainfall1995-2005.pdf} & \includegraphics[width=\linewidth, page=31]{rainfall1995-2005.pdf}     & \includegraphics[width=\linewidth, page=32]{rainfall1995-2005.pdf} \\
+\end{tabular}
+
+\bigskip
+\begin{tabular}{p{0.3\linewidth}p{0.3\linewidth}p{0.3\linewidth}}
+ \parbox{\linewidth}{\centering Monthly rainfall average} & \parbox{\linewidth}{\centering Standard deviation} & \parbox{\linewidth}{\centering Relative rainfall} \\
+\includegraphics[width=1\linewidth, page=1]{scales.pdf} &
+\includegraphics[width=1\linewidth, page=2]{scales.pdf} &
+\includegraphics[width=1\linewidth, page=3]{scales.pdf}
+ \end{tabular}
+
+
+\vspace{0.4in}
+{\LARGE \textbf{Venezuelan rainfall dynamics}}\\
+decade overview 1995--2005\\[1\baselineskip]
+AM Sajo--Castelli. Centro de Estadística y Matemática Aplicada, Universidad Simón Bolívar, Venezuela.
+
+Data source Argus 10 April 2015 (\url{http://argus.cesma.usb.ve}).
+
+\bigskip
+\scriptsize
+\begin{tabular}{|ccccccccccccc|}
+\multicolumn{13}{c}{Decade mean rainfall in millimetres per state.}\\\hline
+ \input{data1.tex}
+ \hline
+\end{tabular}
+
+
+
+\end{document}
